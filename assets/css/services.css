@@ -14,7 +14,7 @@ html {
 }
 
 :root {
-    --mainColor: #1090CB;
+    --mainColor: #2e3088;
     --neroColor: #252525
 }
 
@@ -240,8 +240,8 @@ header {
 }
 
 .main {
-    height: calc(100vh - 62px);
-    background-color: #e7f4fa
+    height: auto;
+    background-color: #e7f4fa;
 }
 
 .maic {
@@ -278,7 +278,8 @@ header {
 
 .main--container {
     width: 80%;
-    margin: auto
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .icon {
