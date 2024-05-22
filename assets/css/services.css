@@ -44,6 +44,65 @@ p {
     margin: 0
 }
 
+.section2 .row {
+    margin-bottom: 30px;
+    /* Adds space between rows */
+    border-radius: 15px;
+    /* Rounded corners for each row */
+    overflow: hidden;
+    /* Ensures content does not overflow rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds shadow for depth */
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+    /* Light gray background for light rows */
+    color: #333;
+    /* Dark text color for light rows */
+}
+
+.bg-dark {
+    background-color: #343a40;
+    /* Dark gray background for dark rows */
+    color: #fff;
+    /* White text color for dark rows */
+}
+
+.iteem {
+    padding: 20px;
+    /* Padding inside each item for spacing */
+}
+
+.buttom {
+    background-color: #007bff;
+    /* Bootstrap primary button color */
+    color: #fff;
+    /* White text color */
+    padding: 10px 15px;
+    /* Button padding */
+    text-decoration: none;
+    /* Removes underline from links */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.buttom:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Responsive Image Styling */
+.section2 img {
+    width: 100%;
+    /* Ensures images take full width of column */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+
 .buttom {
     display: inline-block;
     padding: 5px 14px;
@@ -254,7 +313,7 @@ header {
     font-weight: 400;
     line-height: 32px;
     width: 80%;
-    margin: auto
+    margin: auto;
 }
 
 .main--h2, .sec2--h3 {

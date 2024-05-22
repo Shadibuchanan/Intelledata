@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- owl carousel  -->
@@ -21,6 +22,8 @@
     <title>services</title>
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/services.css">
+    
+    
 </head>
 
 <body>
@@ -50,8 +53,8 @@
     </header>
 
     <!-- main section -->
-    <section id="main" class="main py-4">
-        <div class="container">
+    <section id="main" class="main py-4" >
+        <div class="container" data-aos="zoom-in" data-aos-duration="2000">
             <div class="item text-center pt-3">
                 <img class="maic" src="assets/imges/maic.svg" loading="lazy" alt="seo">
                 <h2 class="main--h2">Our <span class=" mainColor">Services</span></h2>
@@ -119,28 +122,54 @@
     <br>
     <br>
     
-    <!-- section 2  -->
-    <section class=" section2">
+    <section class="section2">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <!-- First row: Text left, Image right (Original) -->
+            <div class="row" data-aos="fade-up" data-aos-duration="2000" >
+                <div class="col-lg-6" >
                     <div class="iteem">
-                        <h3 class="sec2--h3">Lorem Ipsum is simply dummy text of the printing. </h3>
-                        <p class="sec2--p">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-                            applications and website builders measuring dozens of completed projects. We build and
-                            develop mobile applications for several top platforms, including Android & IOS. <br><br>
-                            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website
-                            builders measuring dozens </p>
+                        <h3 class="sec2--h3">Lorem Ipsum is simply dummy text of the printing.</h3>
+                        <p class="sec2--p">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & IOS. <br><br>
+                        KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens</p>
                         <a href="Contact.html" class="buttom text-white mt-3">Contact us</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/imges/team.svg" class=" w-100" loading="lazy" alt="seo">
+                    <img src="assets/imges/team.svg" class="w-100" loading="lazy" alt="seo">
+                </div>
+            </div>
+    
+            <!-- Second row: Image left, Text right (Reversed) -->
+            <div class="row" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-lg-6">
+                    <img src="assets/imges/team.svg" class="w-100" loading="lazy" alt="team">
+                </div>
+                <div class="col-lg-6">
+                    <div class="iteem">
+                        <h3 class="sec2--h3">Efficient IT Solutions for Modern Challenges</h3>
+                        <p class="sec2--p">Intelledata is dedicated to providing top-tier IT services, focusing on the latest technology to enhance business operations. Our solutions are tailored to meet the unique needs of each client, ensuring optimal outcomes. <br><br>
+                        Explore the potential of data-driven decisions with our expert team.</p>
+                        <a href="Contact.html" class="buttom text-white mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Third row: Text left, Image right (Original) -->
+            <div class="row" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-lg-6">
+                    <div class="iteem">
+                        <h3 class="sec2--h3">Leading the Way in Business Analytics</h3>
+                        <p class="sec2--p">Harness the power of your data with Intelledata’s business analytics services. We help you translate complex data into actionable insights that drive business growth. <br><br>
+                        Let us help you make smarter, data-informed decisions.</p>
+                        <a href="Contact.html" class="buttom text-white mt-3">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/imges/data.svg" class="w-100" loading="lazy" alt="data analytics">
                 </div>
             </div>
         </div>
     </section>
-    <!-- //section 2 end -->
 
     <!-- section 3  -->
     <section id="level" class="section3 mt-5 ">
@@ -227,45 +256,25 @@
     <!-- //section 4 end -->
 
 
-    <!-- footer -->
-    <footer>
-        <div class="footer py-5">
-            <div class="container mt-4 text-center py-5 d-flex flex-column align-items-center">
-                <h4 class="footer--tilte">Lorem Ipsum is simply dummy <br> text of the printing. </h4>
-                <div class=" subscribe--foot d-flex py-3 justify-content-center align-items-center w-50 ">
-                    <input type="text" class="footer--input me-2 py-2 px-2  w-100  rounded-3  "
-                        placeholder="Enter your email">
-                    <a href=" " class="buttom bg-black text-white py-1 px-2  ">subscribe</a>
-                </div>
-            </div>
-        </div>
+      <!-- footer -->
+      <footer>
+
         <div class="footer--logo">
             <div class="container py-5">
                 <div class="row  justify-content-between">
                     <div class="col-md-4">
                         <div class="">
-                            <a href="#" class="fw-bold mainColor ">LOGO</a>
-                            <p class="footer--p">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. </p>
-                            <span>@Lorem</span>
+                            <a href="#" class="fw-bold mainColor ">Intelledata</a>
+                            <p class="footer--p">Empowering Your Decisions with Intelligent Data Solutions </p>
+                            <span>@intelledata</span>
                         </div>
-
-                    </div>
-                    <div class="col-md-2">
-                        <h5 class="About--foot">About us</h5>
-                        <ul>
-                            <li>Portfolio </li>
-                            <li>Careers </li>
-                            <li>Contact</li>
-                        </ul>
 
                     </div>
                     <div class="col-md-5">
                         <h5 class="">Contact us</h5>
-                        <p class="Contact--p">Lorem Ipsum is simply dummy text <br> of the printing and typesetting
-                            industry. </p>
+                        <p class="Contact--p">info@intelledata.com</p>
                         <div class="social  d-flex justify-content-between align-items-center mt-1">
-                            <p>+908 89097 890</p>
+                            <p>(954) 232-8866</p>
                             <div class="iconsohial">
                                 <a href="#"><img src="assets/imges/insta.svg" loading="lazy" alt="intgram"></a>
                                 <a href="#"><img src="assets/imges/twitte.svg" loading="lazy" alt="twitteer"></a>
@@ -279,7 +288,7 @@
             </div>
         </div>
         <div class="Copyright text-center py-3 ">
-            <p class=" small">Copyright ® 2021 Lorem All rights Rcerved</p>
+            <p class=" small">Copyright ® 2024 Intelledata All rights Reserved</p>
         </div>
     </footer>
     <!-- // footer end-->
@@ -320,12 +329,14 @@
 
     <!-- jquery -->
     <script src="assets/scripts/jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- owl carousel  -->
     <script src="assets/scripts/owl.carousel.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="assets/scripts/script.js"></script>
+   
 </body>
 
 </html>
