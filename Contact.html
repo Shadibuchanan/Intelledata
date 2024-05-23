@@ -102,31 +102,29 @@
     <section class=" form--section">
         <h3 class=" fw-bold text-center py-3 text-dark">Contact us and start your journey with Intelledata</h3>
 
-        <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="container">
+            <input type="hidden" name="access_key" value="fd0166d0-2d81-42c7-a711-3f7e66249114">
             <div class="row">
                 <div class="col-md-6 my-2">
                     <label for="name" class="py-1 fw-bold">First name</label>
-                    <input id="name" type="text" class="w-100" aria-label="First name">
+                    <input id="name" type="text" name="first_name" class="w-100" aria-label="First name">
                 </div>
                 <div class="col-md-6 my-2">
                     <label for="Lastn" class="py-1 fw-bold">Last name</label>
-
-                    <input id="Lastn" type="text" class="w-100" aria-label="Last name">
+                    <input id="Lastn" type="text" name="last_name" class="w-100" aria-label="Last name">
                 </div>
                 <div class="col-md-12 my-2">
                     <label for="Email" class="py-1 fw-bold">Email Address</label>
-
-                    <input id="Email" type="email" class="w-100" aria-label="email">
+                    <input id="Email"  type="email" name="email" class="w-100" aria-label="email">
                 </div>
                 <div class="col-md-12 my-2">
                     <label for="Message" class="py-1 fw-bold">Message</label>
-
-                    <textarea id="Message" class="w-100" style="height: 100px"></textarea>
-
+                    <textarea id="Message" name="message" class="w-100" style="height: 100px"></textarea>
                 </div>
             </div>
-            <a href="#" class="  buttom text-white  mt-2">Get in touch</a>
-        </div>
+            <button type = "submit" class="buttom text-white mt-2" style="border-width: 0px;">Get in touch</button>
+        </form>
+        
     </section>
     <!-- //form section end  -->
 

@@ -203,17 +203,19 @@ header {
 
 @media screen and (max-width:990px) {
     .Links--list {
-        display: none
+        display: none;
     }
 
     .Links--list.open, .toggle-menu {
         display: -webkit-box;
-        display: -ms-flexbox
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 999;
     }
 
     .toggle-menu {
         display: flex;
-        z-index: 999
+        z-index: 999;
     }
 
     .Links--list.open {
@@ -239,13 +241,29 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        z-index: 99
+        z-index: 99;
     }
 
     .Links--list a {
-        margin: 2rem 0
+        margin: 2rem 0;
+    }
+
+    /* Adjusting carousel control buttons */
+    .carousel-control-prev, .carousel-control-next {
+        position: absolute;
+        top: auto; /* Remove the default top positioning */
+        bottom: 175px; /* Position 10px from the bottom */
+    }
+
+    .carousel-control-prev {
+        left: 10%; /* Position from the left */
+    }
+
+    .carousel-control-next {
+        right: 10%; /* Position from the right */
     }
 }
+
 
 .mainSection {
     height: calc(100vh - 62px);
@@ -254,12 +272,20 @@ header {
     background-size: cover
 }
 
+.carousel-item {
+    height: calc(100vh - 62px); 
+}
+
+.carousel--container {
+    padding-top: 10%;
+}
+
 .main--title {
     line-height: 60px
 }
 
 .section--title {
-    font-size: 80px;
+    font-size: 65px;
     /* Larger font size */
     margin-bottom: 20px;
     /* Bottom margin for spacing */
@@ -272,7 +298,10 @@ header {
 .item2--main {
     -webkit-animation: 4s infinite alternate header;
     animation: 4s infinite alternate header;
-    width: 140%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @-webkit-keyframes header {
@@ -345,7 +374,7 @@ header {
 @media screen and (max-width:850px) {
     .item--main h1 {
         font-size: 31px;
-        line-height: 44px
+        line-height: 44px;
     }
 }
 
@@ -409,7 +438,7 @@ header {
 }
 
 .containerr {
-    width: 90%;
+    width: 80%;
     margin: auto
 }
 
