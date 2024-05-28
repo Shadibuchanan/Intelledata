@@ -200,6 +200,12 @@ header {
     -ms-flex-pack: center;
     justify-content: center
 }
+@media screen and (max-width: 1200px) {
+    .item--main h2, /* Targeting h2 within a specific class for context */
+    .section--title { /* Assuming you also want to target h2 with a specific class */
+        font-size: 50px; /* Smaller font size for smaller screens */
+    }
+}
 
 @media screen and (max-width:990px) {
     .Links--list {
@@ -252,7 +258,7 @@ header {
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
         top: auto; /* Remove the default top positioning */
-        bottom: 175px; /* Position 10px from the bottom */
+        bottom: 25px; /* Position 10px from the bottom */
     }
 
     .carousel-control-prev {
@@ -263,7 +269,6 @@ header {
         right: 10%; /* Position from the right */
     }
 }
-
 
 .mainSection {
     height: calc(100vh - 62px);
@@ -277,7 +282,9 @@ header {
 }
 
 .carousel--container {
-    padding-top: 10%;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .main--title {
