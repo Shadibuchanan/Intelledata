@@ -44,15 +44,48 @@ p {
     margin: 0
 }
 
-.section2 .row {
-    margin-bottom: 30px;
-    /* Adds space between rows */
-    border-radius: 15px;
-    /* Rounded corners for each row */
-    overflow: hidden;
-    /* Ensures content does not overflow rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds shadow for depth */
+@media (max-width: 1160px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+.sec2--h3, .sec2--h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sec2--h3 {
+    color: var(--mainColor);
+    font-size: 40px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.sec2--h4 {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.sec2--p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #868686;
+    margin-top: 0.5rem; /* Adds space above paragraphs */
+    margin-bottom: 1.5rem; /* Adds space below paragraphs for separation */
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .sec2--h3 {
+        font-size: 30px;
+    }
+    .sec2--h4 {
+        font-size: 20px;
+    }
+    .sec2--p {
+        font-size: 14px;
+    }
 }
 
 .bg-light {
@@ -70,8 +103,11 @@ p {
 }
 
 .iteem {
-    padding: 20px;
-    /* Padding inside each item for spacing */
+    border-radius: 15px;
+    /* Rounded corners for each row */
+    overflow: hidden;
+    /* Ensures content does not overflow rounded corners */
+    /* Optional: Adds shadow for depth */
 }
 
 .buttom {
@@ -253,6 +289,10 @@ header {
 }
 
 @media screen and (max-width:990px) {
+    .hide-on-very-small {
+        display: none;
+    }
+
     .Links--list {
         display: none
     }
@@ -299,9 +339,11 @@ header {
 }
 
 .main {
-    height: auto;
+    height: calc(100vh - 62px);
     background-color: #e7f4fa;
 }
+
+
 
 .maic {
     width: 130px;
@@ -340,6 +382,7 @@ header {
     margin: auto;
     margin-bottom: 5rem;
 }
+
 
 .icon {
     padding: 12px
@@ -411,6 +454,11 @@ header {
 
 .Copyright {
     border-top: .1px solid #dfdadaf1
+}
+
+.custom-hr {
+    border: 1px solid #2e3088;
+    opacity: 1.0;
 }
 
 @media screen and (max-width:600px) {
