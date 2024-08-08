@@ -20,3 +20,5 @@ This repository contains the source code for the Intelledata company website. Th
 - Implemented Mailchimp API for newsletter subscriptions.
 - Custom-designed subscription form that matches the website's aesthetic.
 - Backend integration to securely handle user data and subscription requests.
+
+Developed with ❤️ by Shadi Buchanan
